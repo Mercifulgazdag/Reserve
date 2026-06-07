@@ -1,0 +1,7 @@
+while True:
+    print("\n--- PARKOLÓ --- | 1: Állapot | 2: Foglalás | 3: Távozás | 4: Mentés/Kilépés")
+    valasztas = input("Válassz: ")
+
+    if valasztas == "1":
+        for id, adat in helyek.items():
+            print(f"{id}: {adat['statusz']} ({adat['tipus']})")
