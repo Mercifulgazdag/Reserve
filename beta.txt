@@ -1,0 +1,11 @@
+parkolo = [0] * 51
+ 
+hely = int(input("Melyik helyet kéred (1-50)? "))
+ora = int(input("Hány órára? "))
+ 
+parkolo[hely] = ora
+ 
+if ora <= 1:
+    fizetendo = 0
+else:
+    fizetendo = (ora - 1) * 500
